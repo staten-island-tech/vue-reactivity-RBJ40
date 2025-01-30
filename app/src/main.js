@@ -9,4 +9,4 @@ const app = createApp(App)
 app.use(router)
 
 app.mount('#app')
-//possibly set up dom here
+//possibly set up dom here. don't set up dom like usual
