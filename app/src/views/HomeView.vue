@@ -6,8 +6,8 @@ import TheWelcome from '../components/TheWelcome.vue'
   <main>
     <TheWelcome />
     <h2>
-      {{ //
-      <!--placeholder-->
+      {{ 
+      //placeholder
       }}
     </h2>
   </main>
