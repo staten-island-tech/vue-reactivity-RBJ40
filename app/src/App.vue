@@ -12,7 +12,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="You did it!" />
 
       <nav>
-        <RouterLink to="/">Book</RouterLink>
+        <RouterLink to="/">Products</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
