@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-import list from './views/list.js' //need to figure out how to import javascript into here
+import groceryItems from './views/list.js'
 </script>
 
 <style>
