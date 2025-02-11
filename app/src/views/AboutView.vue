@@ -2,8 +2,13 @@
   <div class="about">
     <h1>Grocery shop</h1>
     <p>Buy</p>
-    <h1 v-for="groceryItem in groceryItems" :key="groceryItem">{{ groceryItem.name }}</h1>
-    <h2 v-for="groceryItem in groceryItems" :key="groceryItem">{{ groceryItem.price }}</h2>
+    <div v-for="groceryItem in groceryItems" :key="groceryItem">
+      <h1>{{ groceryItem.name }}</h1>
+      <h2>{{ groceryItem.price }}</h2>
+      <img :src="groceryItem.img" />
+      <!--might add imgDesc here-->
+      <slot></slot>
+    </div>
   </div>
 </template>
 
