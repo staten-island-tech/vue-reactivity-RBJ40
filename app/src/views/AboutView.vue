@@ -13,10 +13,10 @@
 </template>
 
 <script setup>
-import groceryItems from '../views/list.js'
+import groceryItems from '../views/list.js' //possibly imported wrong???
 </script>
 
-<style>
+<style scoped>
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
