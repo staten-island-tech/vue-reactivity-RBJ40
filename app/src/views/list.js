@@ -1,4 +1,5 @@
 export const groceryItems = [
+  //export might not be needed
   { name: 'Apple', price: '$1.25', img: '/GroceryItems/apple.jpeg' },
   { name: 'Orange', price: '$1.25', img: '/GroceryItems/orange.jpeg' },
   { name: 'Kiwi', price: '$2', img: '/GroceryItems/kiwi.jpeg' },
