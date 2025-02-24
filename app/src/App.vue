@@ -24,7 +24,7 @@ import groceryItems from './components/GroceryItems.vue'
     </div>
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+
 
       <nav>
         <RouterLink to="/">Products</RouterLink>
