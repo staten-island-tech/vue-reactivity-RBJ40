@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import groceryItems from '../views/list.js' //possibly imported wrong or wrong place???
+
 </script>
 
 <style scoped>
