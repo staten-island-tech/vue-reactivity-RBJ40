@@ -8,6 +8,7 @@
         <slot name="heading"></slot>
       </h3>
       <slot></slot>
+      <!-- <button @click="$emit"('AddtoCart', index)">Add to Cart</button> -->
     </div>
   </div>
 </template>
