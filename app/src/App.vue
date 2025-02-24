@@ -1,11 +1,12 @@
 <!--appears on the whole website-->
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-import groceryItems from './views/list.js'
+import HelloWorld from './components/GroceryItems.vue'
+import groceryItems from './components/GroceryItems.vue'
 </script>
 
 <template>
+  <div><RouterView/></div>
   <header>
     <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
     <h1>Grocery shop</h1>
@@ -15,7 +16,11 @@ import groceryItems from './views/list.js'
       <h2>{{ groceryItem.price }}</h2>
       <img :src="groceryItem.img" />
       <!--might add imgDesc here-->
-      <slot></slot>
+      <!-- <button @click="$emit"('AddtoCart', index)">Add to Cart</button>
+      <slot></slot> -->
+    <div class="container">
+      <div class="card"><GroceryItems/></div>
+    </div>
     </div>
 
     <div class="wrapper">
@@ -32,6 +37,17 @@ import groceryItems from './views/list.js'
 </template>
 
 <style scoped>
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
 header {
   line-height: 1.5;
   max-height: 100vh;
