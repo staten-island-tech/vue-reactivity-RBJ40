@@ -1,12 +1,9 @@
 <!--appears on the whole website-->
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
 import { groceryItems } from './components/GroceryItems.vue'
 </script>
 
 <template>
-  <div><RouterView /></div>
-  <div><RouterLink /></div>
   <main>
     <h1>Grocery shop</h1>
     <p>Buy</p>
