@@ -6,10 +6,10 @@ import { groceryItems } from './components/GroceryItems.vue'
 <template>
   <main>
     <h1>Grocery shop</h1>
-    <p>Buy</p>
-    <div v-for="item in groceryItems" :key="item.name">
-      <h2>{{ item.name }} - {{ item.price }}</h2>
-      <img :src="item.img" alt="Grocery Item" />
+    <h2>Buy</h2>
+    <div v-for="groceryItem in groceryItems" :key="item.name">
+      <h2>{{ groceryItem.name }} - {{ groceryItem.price }}</h2>
+      <img :src="groceryItem.img" alt="Grocery Item" />
     </div>
   </main>
 </template>
@@ -17,17 +17,13 @@ import { groceryItems } from './components/GroceryItems.vue'
 
 
 <style scoped>
-.container{
+/* .container{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 2rem;
-}
-.card{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
+} */
+
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -90,3 +86,4 @@ nav a:first-of-type {
   }
 }
 </style>
+
