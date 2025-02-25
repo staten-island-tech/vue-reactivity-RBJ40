@@ -1,8 +1,7 @@
 <!--appears on the whole website-->
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/GroceryItems.vue'
-import groceryItems from './components/GroceryItems.vue'
+import { groceryItems } from './components/GroceryItems.vue'
 </script>
 
 <template>
