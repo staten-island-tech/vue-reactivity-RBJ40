@@ -15,7 +15,7 @@ import ShoppingCart from '@/components/ShoppingCart.vue';
   </main>
 </template>
 <style lang="css" scoped>
-.card{
+.cart{
   display: flex;
   flex-wrap: wrap;
 }
