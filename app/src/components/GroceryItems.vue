@@ -1,7 +1,7 @@
 <template>
     <div class="container">
     <div class="card-container">
-      <GroceryItemCard
+      <GroceryCard
         v-for="(item, index) in shop"
         :key="index"
         :name="item.name"
