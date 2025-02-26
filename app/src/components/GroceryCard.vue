@@ -50,18 +50,13 @@ button {
   background-color: transparent;
 }
 
-.name {
-  font-size: 2.5rem;
-  color: rgb(13, 54, 51);
-  margin-left: 0.3rem;
-}
 
-.price {
+h3 {
   font-size: 2rem;
   color: rgb(13, 107, 101);
 }
 
-.image {
+img {
   height: 25rem;
   width: fit-content;
   object-fit: contain;
