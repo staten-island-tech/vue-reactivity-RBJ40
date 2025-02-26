@@ -6,7 +6,7 @@
         :key="index"
         :name="item.name"
         :price="item.price"
-        :img="item.img"
+        :image="item.image"
         :index="item.index"
         v-on:AddtoCart="addingitem"
       />
@@ -66,8 +66,8 @@ onUpdated(() => {
 })
 </script>
 
-<style scoped>
-.container {
+<style lang="css" scoped>
+/* .container {
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -83,6 +83,29 @@ onUpdated(() => {
   height: fit-content;
   width: 25%;
   border: 5px solid black;
+} */
+.card-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100rem;
+}
+.cart {
+  height: fit-content;
+  width: 25%;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
 </style>
