@@ -18,7 +18,7 @@ defineProps({
 })
 </script>
 
-<style lang="css" scoped>
+<style scoped>
 /* .card{
   display: flex;
   flex-wrap: wrap;
