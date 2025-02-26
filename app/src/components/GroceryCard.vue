@@ -8,7 +8,14 @@
 </template>
 
 <script setup>
-
+defineProps({
+  msg: {
+    name: String,
+    price: Number,
+    image: String,
+    index: Number,
+  },
+})
 </script>
 
 <style lang="css" scoped>
