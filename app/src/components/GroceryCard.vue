@@ -31,23 +31,19 @@ img{
     object-fit: contain;
 } */
 .card {
-  border-radius: 1.5rem;
-  border-width: 1rem;
-  width: 25rem;
-  height: 45rem;
+  width: 15rem;
+  height: 20rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  border: 1rem groove;
-  border-color: black;
+  border: 8px solid red;
 }
 
 button {
-  padding: 0.3rem;
+  padding: 5rem;
   font-size: 1.6rem;
-  background-color: transparent;
 }
 
 
