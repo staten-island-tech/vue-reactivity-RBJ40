@@ -49,13 +49,13 @@ function addItem(index) {  //index because it's unique
   console.log(index, 'Adding item to cart')
   const item = shop.value[index] 
   if (item) {
-    cart.value.push({ name: item.name, price: item.price }) 
+    cart.push({ name: item.name, price: item.price }) 
   }
 }
 addItem();
   
 function deleteItem = (index) => {
-  cart.value.splice(index, 1);
+  cart.splice(index, 1);
 }
 deleteItem();
   
