@@ -8,6 +8,7 @@
 </template>
 
 <script setup>
+import { groceryItems } from '@/components/GroceryItems.vue';
 defineProps({
   msg: {
     name: String,
