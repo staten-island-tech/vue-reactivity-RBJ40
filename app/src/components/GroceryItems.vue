@@ -11,6 +11,15 @@
         v-on:AddtoCart="addingitem"
       />
     </div>
+    <div class="cart">
+      <h2>Shopping Cart:</h2>
+      <h2>---------------</h2>
+      <p v-for="(item, index) in cart" :key="index">
+        <span> {{ item.name }} - ${{ item.price }} </span>
+        <button @click="deleteItem(index)">Remove Item</button>
+      </p>
+      <h3>Total Cost: ${{ totalPrice.toFixed(2) }}</h3>
+    </div>
     </div>
 </template>
 
@@ -35,8 +44,46 @@ export const groceryItems = ref([
   { name: 'Steak', price: 6, img: '/GroceryItems/steak.jpeg', index: 15 },
   { name: 'Salmon', price: 10, img: '/GroceryItems/salmon.jpeg', index: 16 },
 ])
+
+const cart = ref([])
+
+function addItem(index) {  //index because it's unique
+  console.log(index, 'Adding item to cart')
+  const item = shop.value[index] 
+  if (item) {
+    cart.value.push({ name: item.name, price: item.price }) 
+  }
+}
+
+const deleteItem = (index) => {
+  cart.value.splice(index, 1)
+}
+
+const totalPrice = computed(() => {
+  return cart.value.reduce((sum, item) => sum + item.price, 0)
+})
+
+onUpdated(() => {
+  console.log('Cart updated:', cart.value)
+})
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="css" scoped>
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.cart {
+  height: fit-content;
+  width: 25%;
+  border: 5px solid black;
+}
 </style>
