@@ -52,15 +52,18 @@ function addItem(index) {  //index because it's unique
     cart.value.push({ name: item.name, price: item.price }) 
   }
 }
-
-const deleteItem = (index) => {
+addItem();
+  
+function deleteItem = (index) => {
   cart.value.splice(index, 1)
 }
-
-const totalPrice = computed(() => {
+deleteItem();
+  
+function totalPrice = computed(() => {
   return cart.value.reduce((sum, item) => sum + item.price, 0)
 })
-
+totalPrice();
+  
 onUpdated(() => {
   console.log('Cart updated:', cart.value)
 })
