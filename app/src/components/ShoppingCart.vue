@@ -26,7 +26,7 @@ defineProps({
 </template>
 
 
-<style lang="css" scoped>
+<style scoped>
 .cart {
   height: fit-content;
   width: 25%;
