@@ -13,7 +13,6 @@
     </div>
     <div class="cart">
       <h2>Shopping Cart:</h2>
-      <h2>---------------</h2>
       <p v-for="(item, index) in cart" :key="index">
         <span> {{ item.name }} - ${{ item.price }} </span>
         <button @click="deleteItem(index)">Remove Item</button>
