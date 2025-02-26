@@ -1,6 +1,4 @@
 <script setup>
-import groceryItems from '@/components/GroceryItems.vue'
-import { groceryItems } from './list';
 import ShoppingCart from '@/components/ShoppingCart.vue';
 import GroceryItems from '@/components/GroceryItems.vue';
 </script>
