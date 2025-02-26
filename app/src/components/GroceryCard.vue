@@ -19,18 +19,35 @@ defineProps({
 </script>
 
 <style scoped>
-.card{
+/* .card{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   border: 8px solid red;
+}
+img{
+    object-fit: contain;
+} */
+.card {
   width: 15rem;
   height: 20rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 8px solid red;
 }
+
 button {
   padding: 5rem;
+}
+
+
+h3 {
+  font-size: 3rem;
 }
 
 img {
