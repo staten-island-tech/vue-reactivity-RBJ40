@@ -96,6 +96,7 @@ onUpdated(() => {
 .cart {
   height: fit-content;
   width: 25%;
+  background-color: gray;
 }
 
 .container {
