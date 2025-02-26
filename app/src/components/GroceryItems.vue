@@ -109,4 +109,6 @@ onUpdated(() => {
   flex-wrap: wrap;
   width: 50%;
 }
+h2{
+  font-size: 4px;
 </style>
