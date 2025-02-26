@@ -2,7 +2,7 @@
     <div class="container">
     <div class="card-container">
       <GroceryCard
-        v-for="(item, index) in shop"
+        v-for="(item, index) in groceryItems"
         :key="index"
         :name="item.name"
         :price="item.price"
