@@ -2,11 +2,11 @@
 import { ref } from 'vue'
 const price = ref('$0.00'); //starting price = $0.00
 
-const deleteItem = (index) => {
+function deleteItem = (index) => {
   console.log(index, 'Delete item')
-  item.value.splice(index, 1);
+  item.splice(index, 1);
 }
-
+deleteItem();
 defineProps({
   cart: Array, 
 })
