@@ -43,19 +43,11 @@ img{
 
 button {
   padding: 5rem;
-  font-size: 1.6rem;
-}
-
-
-h3 {
-  font-size: 2rem;
-  color: rgb(13, 107, 101);
 }
 
 img {
   height: 25rem;
   width: fit-content;
   object-fit: contain;
-  margin: 0.3rem;
 }
 </style>
