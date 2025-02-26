@@ -14,7 +14,7 @@
     <div class="cart">
       <h2>Shopping Cart:</h2>
       <p v-for="(item, index) in cart" :key="index">
-        <span> {{ item.name }} - ${{ item.price }} </span>
+        <h2> {{ item.name }} - ${{ item.price }} </h2>
         <button @click="deleteItem(index)">Remove Item</button>
       </p>
       <h3>Total Cost: ${{ totalPrice.toFixed(2) }}</h3>
