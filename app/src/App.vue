@@ -1,4 +1,4 @@
-<!--appears on the whole website-->
+<!--appears on the whole website
 <script setup>
 import { groceryItems } from './components/GroceryItems.vue'
 </script>
@@ -85,5 +85,4 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-</style>
-
+</style> -->
