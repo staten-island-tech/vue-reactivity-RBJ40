@@ -55,12 +55,12 @@ function addItem(index) {  //index because it's unique
 addItem();
   
 function deleteItem = (index) => {
-  cart.value.splice(index, 1)
+  cart.value.splice(index, 1);
 }
 deleteItem();
   
 function totalPrice = computed(() => {
-  return cart.value.reduce((sum, item) => sum + item.price, 0)
+  return cart.reduce((sum, item) => sum + item.price, 0);
 })
 totalPrice();
   
