@@ -66,7 +66,7 @@ onUpdated(() => {
 })
 </script>
 
-<style lang="css" scoped>
+<style scoped>
 /* .container {
   display: flex;
   align-items: flex-start;
