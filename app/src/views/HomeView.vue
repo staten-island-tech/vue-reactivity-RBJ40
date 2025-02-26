@@ -2,21 +2,17 @@
 import groceryItems from '@/components/GroceryItems.vue'
 import { groceryItems } from './list';
 import ShoppingCart from '@/components/ShoppingCart.vue';
+import GroceryItems from '@/components/GroceryItems.vue';
 </script>
 
 <template>
-  <main>
-
-    <div v-for="item in groceryItems" :key="item.name">
-      <h2>{{ item.name }} - {{ item.price }}</h2>
-      <img :src="item.img" alt="Grocery Item" />
-    </div>
-    <div class="cart"><ShoppingCart/></div>
-  </main>
+  <div class="cards"><GroceryItems /></div>
 </template>
+
 <style lang="css" scoped>
-.cart{
+.cards{
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 </style>
