@@ -68,7 +68,7 @@ onUpdated(() => {
 </script>
 
 <style lang="css" scoped>
-.container {
+/* .container {
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -84,5 +84,56 @@ onUpdated(() => {
   height: fit-content;
   width: 25%;
   border: 5px solid black;
+} */
+.card-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100rem;
+  height: 80rem;
+  align-self: flex-start;
+}
+
+h2 {
+  text-align: left;
+  color: rgb(36, 17, 54);
+  font-size: 2.5rem;
+}
+
+h3 {
+  text-align: left;
+  color: rgb(36, 17, 54);
+  font-size: 2rem;
+}
+
+p {
+  padding: 0.2rem;
+  text-align: left;
+  font-size: 3rem;
+  color: rgb(54, 17, 23);
+}
+
+.cart {
+  height: fit-content;
+  width: 25%;
+  background-color: azure;
+  padding: 0.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 75%;
 }
 </style>
