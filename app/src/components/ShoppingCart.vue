@@ -3,7 +3,7 @@ import { ref } from 'vue'
 const price = ref('$0.00'); //starting price = $0.00
 
 const deleteItem = (index) => {
-  console.log(index, 'Delete item function')
+  console.log(index, 'Delete item')
   item.value.splice(index, 1);
 }
 
