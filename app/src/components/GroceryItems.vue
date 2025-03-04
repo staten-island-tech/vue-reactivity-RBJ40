@@ -17,7 +17,7 @@
         <h2> {{ item.name }} - ${{ item.price }} </h2>
         <button @click="deleteItem(index)">Remove Item</button>
       </p>
-      <h3>Total Cost: ${{ totalPrice.toFixed(2) }}</h3>
+      <h3>Total Cost: ${{ totalPrice.toFixed(2) }}</h3>   <!--makes totalPrice have two decimal places-->
     </div>
     </div>
 </template>
