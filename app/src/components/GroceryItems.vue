@@ -7,7 +7,6 @@
         :name="item.name"
         :price="item.price"
         :image="item.image"
-        :index="item.index"
         v-on:AddtoCart="addingitem"
       />
     </div>
