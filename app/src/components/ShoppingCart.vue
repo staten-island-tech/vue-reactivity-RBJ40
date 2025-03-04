@@ -22,7 +22,7 @@ defineProps({
         <button @click="deleteItem(index)">Remove Item</button>
       </li>
     </ul>
-    <h3>Total Cost: ${{ price }}</h3>
+    <h3>Total Cost: ${{ totalPrice.toFixed(2) }}</h3>   <!--makes totalPrice have two decimal places-->
   </div>
 </template>
 
