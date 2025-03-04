@@ -91,14 +91,13 @@ onUpdated(() => {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   width: 100rem;
 }
 .cart {
   height: fit-content;
-  width: 25%;
+  width: 40%;
   background-color: gray;
 }
 
