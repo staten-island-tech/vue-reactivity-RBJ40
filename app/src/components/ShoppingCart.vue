@@ -7,6 +7,7 @@ function deleteItem = (index) => {
   item.splice(index, 1);
 }
 deleteItem();
+  
 defineProps({
   cart: Array, 
 })
