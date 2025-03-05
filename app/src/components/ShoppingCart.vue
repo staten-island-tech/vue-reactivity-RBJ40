@@ -5,13 +5,13 @@ const price = ref('$0.00'); //starting price = $0.00
 
 function deleteItem = (index) => {
   console.log(index, 'Delete item')
-  item.splice(index, 1);
+  cart.splice(index, 1);
 }
 deleteItem();
   
 function addItem = (index) => {
   console.log(index, 'Add Item')
-  item.push(index, 1);
+  cart.push({ name: item.name, price: item.price }) 
 }
 addItem();
   
