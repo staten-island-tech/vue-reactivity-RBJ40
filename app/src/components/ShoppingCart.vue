@@ -9,6 +9,12 @@ function deleteItem = (index) => {
 }
 deleteItem();
   
+function addItem = (index) => {
+  console.log(index, 'Add Item')
+  item.push(index, 1);
+}
+addItem();
+  
 defineProps({
   cart: Array, 
 })
