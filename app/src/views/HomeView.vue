@@ -1,6 +1,6 @@
 <script setup>
 import GroceryItems from '@/components/GroceryItems.vue'
-import { groceryItems } from './list';
+import { groceryItems } from '@/components/GroceryItems.vue';
 </script>
 
 <template>
