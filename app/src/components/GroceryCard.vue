@@ -43,15 +43,17 @@ img{
 
 button {
   padding: 5rem;
+  display: flex;
 }
 
 
 h3 {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 img {
   height: 25rem;
+  border: 5px solid black;
   width: fit-content;
   object-fit: contain;
 }
