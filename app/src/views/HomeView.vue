@@ -1,16 +1,15 @@
 <script setup>
-import ShoppingCart from '@/components/ShoppingCart.vue';
-import GroceryItems from '@/components/GroceryItems.vue';
+import GroceryItems from '@/components/GroceryItems.vue'
+import { groceryItems } from './list';
 </script>
 
 <template>
-  <div class="cards"><GroceryItems /></div>
+  <main>
+    <h1>Grocery shop</h1>
+    <p>Buy</p>
+    <div v-for="item in groceryItems" :key="item.name">
+      <h2>{{ item.name }} - {{ item.price }}e</h2>
+      <img :src="item.img" alt="Grocery Item" />
+    </div>
+  </main>
 </template>
-
-<style lang="css" scoped>
-.cards{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-</style>
