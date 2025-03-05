@@ -3,7 +3,6 @@
     <h2>{{ name }}</h2>
     <h3>Price: ${{ price }}</h3>
     <img :src="img" alt="Grocery Item"/>
-    <button @click="$emit('AddtoCart', index)">Add to Cart</button>  //chatgpt
   </div>
 </template>
 
