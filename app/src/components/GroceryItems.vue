@@ -87,10 +87,9 @@ onUpdated(() => {
   border: 5px solid black;
 } */
 .card-container {
-  width: 80%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   flex-direction: row;
   width: 100rem;
 }
@@ -102,6 +101,7 @@ onUpdated(() => {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -111,5 +111,5 @@ onUpdated(() => {
   width: 50%;
 }
 h2{
-  font-size: 4px;
+  font-size: 5rem;
 </style>
