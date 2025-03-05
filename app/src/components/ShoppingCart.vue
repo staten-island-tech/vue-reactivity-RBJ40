@@ -21,6 +21,7 @@ defineProps({
       <li v-for="(item, index) in cart" :key="index">
         <h2>{{ item.name }} - ${{ item.price }}</h2>
         <button @click="deleteItem(index)">Remove Item</button>
+        <button @click="addItem(index)">Add to Cart</button>
       </li>
     </ul>
     <h3>Total Cost: ${{ totalPrice.toFixed(2) }}</h3>   <!--makes totalPrice have two decimal places-->
