@@ -8,7 +8,7 @@
         :price="item.price"
         :image="item.image"
         v-on:AddtoCart="addingitem"
-      />
+      />  <!--chatgpt-->
     </div>
     <div class="cart">
       <h2>Shopping Cart:</h2>
