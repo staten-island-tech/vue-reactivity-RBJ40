@@ -52,8 +52,8 @@ function addItem(index) {  //index because it's unique
   }
 }
 addItem();
-  
-function deleteItem = (index) => {
+
+deleteItem(index) => {
   cart.splice(index, 1);
 }
 deleteItem();
