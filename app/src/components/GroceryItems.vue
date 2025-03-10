@@ -112,4 +112,5 @@ onUpdated(() => {
 }
 h2{
   font-size: 5rem;
+}
 </style>
