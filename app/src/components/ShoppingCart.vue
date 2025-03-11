@@ -3,7 +3,7 @@ import GroceryItems from '@/components/GroceryItems.vue';
 import { ref } from 'vue'
 const price = ref('$0.00'); //starting price = $0.00
 
-function deleteItem = (index) => {
+deleteItem(index) => {
   console.log(index, 'Delete item')
   cart.splice(index, 1);
 }
