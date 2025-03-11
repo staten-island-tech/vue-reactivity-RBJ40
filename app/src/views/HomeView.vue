@@ -17,7 +17,6 @@ import GroceryItems from '@/components/GroceryItems.vue';
 <style scoped>
 h1, p {
   font-size: 2rem;
-  align-content: center;
 }
 
 </style>
