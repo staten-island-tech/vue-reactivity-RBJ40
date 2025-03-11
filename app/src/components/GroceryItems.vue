@@ -53,15 +53,15 @@ function addItem(index) {  //index because it's unique
 }
 addItem();
 
-deleteItem(index) => {
+function deleteItem(index) {
   cart.splice(index, 1);
 }
 deleteItem();
   
-function totalPrice = computed(() => {
+const totalPrice = computed(() => {
   return cart.reduce((sum, item) => sum + item.price, 0);
 })
-totalPrice();
+
   
 onUpdated(() => {
   console.log('Cart updated:', cart.value)
