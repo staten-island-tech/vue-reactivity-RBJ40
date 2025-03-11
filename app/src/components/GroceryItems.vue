@@ -69,23 +69,6 @@ onUpdated(() => {
 </script>
 
 <style lang="css" scoped>
-/* .container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-}
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
-}
-.cart {
-  height: fit-content;
-  width: 25%;
-  border: 5px solid black;
-} */
 .card-container {
   width: 70%;
   display: flex;
