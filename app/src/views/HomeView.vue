@@ -14,8 +14,8 @@ import GroceryItems from '@/components/GroceryItems.vue';
 </template>
 
 <style scoped>
-h2, p {
-  font-size: 5rem;
+h1, p {
+  font-size: 2rem;
 }
 
 </style>
