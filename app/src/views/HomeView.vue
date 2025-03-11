@@ -1,5 +1,5 @@
 <script setup>
-import {{ groceryItems }} from '@/components/GroceryItems.vue';
+import GroceryItems from '@/components/GroceryItems.vue';
 </script>
 
 <template>
@@ -12,3 +12,10 @@ import {{ groceryItems }} from '@/components/GroceryItems.vue';
     </div>
   </main>
 </template>
+
+<style scoped>
+h2, p {
+  font-size: 5rem;
+}
+
+</style>
